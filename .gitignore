@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+.env.local
+contract/node_modules/
+contract/build/
+*.wasm
+*.wat
+.DS_Store
