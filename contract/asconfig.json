@@ -1,0 +1,20 @@
+{
+  "targets": {
+    "debug": {
+      "outFile": "build/BtcRaffle.wasm",
+      "textFile": "build/BtcRaffle.wat",
+      "sourceMap": true,
+      "debug": true
+    },
+    "release": {
+      "outFile": "build/BtcRaffle.wasm",
+      "textFile": "build/BtcRaffle.wat",
+      "optimize": true,
+      "noAssert": false,
+      "sourceMap": false
+    }
+  },
+  "options": {
+    "bindings": "esm"
+  }
+}

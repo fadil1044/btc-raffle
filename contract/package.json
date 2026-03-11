@@ -1,0 +1,18 @@
+{
+  "name": "btc-raffle-contract",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "asc src/index.ts --target release --outFile build/contract.wasm --textFile build/contract.wat --optimize",
+    "build:debug": "asc src/index.ts --target debug --outFile build/contract-debug.wasm",
+    "deploy": "node scripts/deploy.js",
+    "test": "node scripts/test.js"
+  },
+  "dependencies": {
+    "@btc-vision/btc-runtime": "^1.0.0"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.27.0",
+    "@btc-vision/opnet": "^1.0.0"
+  }
+}
